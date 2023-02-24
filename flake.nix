@@ -14,7 +14,7 @@
             (modulesPath + "/profiles/qemu-guest.nix")
             disko.nixosModules.disko
           ];
-          environment.systemPackages = [ nixpkgs.hello ];
+#         environment.systemPackages = [ nixpkgs.hello ];
           disko.devices = import ./disk-config.nix {
             lib = nixpkgs.lib;
           };
